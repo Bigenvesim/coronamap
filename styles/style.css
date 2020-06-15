@@ -1,0 +1,296 @@
+/*
+filename: style.css
+author: Pham Phuc Hung Le (101985894)
+created: 22/05/2020
+last modified: 15/06/2020
+description: Css file for Corona Virus Dashboard
+*/
+*	{
+	margin: auto;
+}
+
+body {
+	max-width: 100%;
+	overflow-x: hidden;
+	background-color: #e6e6e6 ;/* color black light */
+	margin: 0;
+	padding: 0;
+	border: none;
+	position: relative;
+	min-width: 250px;}
+
+/*---------------------------header-------------------------------*/
+header {
+	margin: auto;
+	background-image: url("images/background.jpg");
+	background-size: cover;
+	}
+
+header h1 {
+	color: #bfbfbf;
+	text-align: center;
+	font-size: 30px;
+	font: bold 3em 	Helvetica, Arial, sans-serif;
+	padding: 30px;
+}
+
+
+header form {
+		position: absolute;
+		right:0px;
+		top:12px;
+		bottom: 2px;
+		width:20%;}
+
+/*-------------------------navigation------------------------------*/
+nav {
+	text-align: center;
+	background: #262626;   /* color black lighter */
+	font-family: "calibri light", calibri;}
+
+nav a {
+	text-decoration: none;
+	display: block;
+	color: white;
+	padding: 15px  ;
+	font-size: 17px;}
+
+nav a:hover {
+	background-color: #ddd ;/* color heavy white  */
+	font-weight: bold;}
+
+nav a.active {
+	background-color: #4CAF50; /* color green */
+	color: white;}
+
+/*--------------------------Section--------------------------------*/
+#article  {
+	text-decoration: underline;
+	color: white;
+	font-family: Helvetica, Arial, sans-serif;
+	margin-top: 12px;
+	margin-left: 12px;
+	margin-right: 12px;
+	font-size: 2em;}
+
+section * {
+	color: white;
+	margin-top: 12px;
+	margin-left: 12px;
+	margin-bottom: 12px;
+	margin-right: 12px;
+	font-family: Helvetica, Arial, sans-serif;
+	text-align: justify;
+}
+
+
+
+/* Overview Section */
+.ov-item {
+	vertical-align: middle;
+	width: 49%;
+	margin-right: 2%;
+	margin-bottom: 15px;
+	padding: 5px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	box-sizing: border-box;
+}
+
+.ov-item:nth-child(2n) {
+	margin-right: 0;
+	padding-right: 0;
+}
+
+.ov-item:nth-last-child(2),
+.ov-item:last-child {
+	margin-bottom: 0;
+}
+
+#overview {
+	color: black;
+	margin-top: 1px;
+	margin-left: 1px;
+	margin-bottom: 0px;
+	margin-right: 1px;
+	font-family: Helvetica, Arial, sans-serif;
+	display: flex;
+	background-color: #e6e6e6;/*#ff4d4d;*/
+	flex-wrap: wrap;
+	position: relative;
+	height: 100%;
+}
+
+#overview:after {
+	content: "";
+	border: 0;
+	position: absolute;
+	width: 1px;
+	height: 80%;
+	top: 11%;
+	left: calc(50% - 1px);
+	display: block;
+	background-image: -webkit-linear-gradient(top, #e6e6e6, #000, #e6e6e6);
+  background-image: -moz-linear-gradient(top, #e6e6e6, #000, #e6e6e6);
+  background-image: -ms-linear-gradient(top, #e6e6e6, #000, #e6e6e6);
+  background-image: -o-linear-gradient(top, #e6e6e6, #000, #e6e6e6);
+  background-image: linear-gradient(top, #e6e6e6, #000, #e6e6e6);
+
+}
+
+#overview_section1{
+	padding-left: 10em;
+	padding-bottom: 5em;
+	text-align: center;
+}
+
+#overview_section2{
+	text-align: left;
+	margin-top: 1px;
+}
+
+#overview_section2 table{
+	 border-spacing: 0.5em;
+	 margin-left: 0px;
+}
+
+
+/*---- End of Overview Section ----*/
+
+/*---- Corona Map  ----*/
+.country:hover{
+	fill: #33adff;
+}
+
+.graph-svg-component{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background-color: #333333;
+}
+
+
+#map{
+	background-color: #1a1a1a;
+	margin-top: 0px;
+	display:flex;
+	justify-content: center;
+}
+
+#pieChart{
+	background-color: blue;
+ margin-left: -185px;
+	display:flex;
+	justify-content: center; */
+}
+
+
+#parent{
+	/* text-align: center; */
+
+	/* padding-left: 500px; */
+}
+
+#wrapper{
+	width:95%;
+}
+
+#lineChart{
+	padding-top: 60px;
+	float: left;
+	/* display:flex;
+	justify-content: center; */
+}
+
+.line, .line2{
+    fill: none;
+    mix-blend-mode: multiply;
+    stroke-width: 5;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+}
+
+.line:hover{
+		stroke-dasharray: 15;
+    stroke: #e65c00;
+		stroke-width: 10;
+
+}
+
+.line2:hover{
+		/* stroke-dasharray: 15; */
+    stroke: #e65c00;
+		stroke-width: 10;
+
+}
+
+#chartColorLegend{
+	float: left;
+	/* display:flex;
+	justify-content: center; */
+}
+
+#countrySelection{
+	overflow-x: visible;
+	margin-top: 50px;
+	width: 200px;
+	height: 100%;
+	background-color: white;
+	border: 2px solid grey;
+	float:left;
+}
+
+
+
+#metricSelection{
+	margin-top: 50px;
+	margin-left: 50px;
+}
+
+
+
+
+
+/*--table in TOPIC--*/
+/* table {
+	border:1px solid white;
+	width: 50%;}
+
+th, td {
+	border: 1px solid white;}
+
+th {
+	background-color: green;}
+
+tr {
+	background-color: darkmagenta;} */
+
+
+/*--------------------------footer---------------------------------*/
+
+footer {
+	clear: both;
+	background-color: grey; /*color heavy white */
+	font-family: Helvetica, Arial, sans-serif;
+	color: white;
+	padding: 1.2em;
+	width: 100%;
+	font-size: small;
+	}
+footer p a {
+	font-size: 36px;
+}
+
+footer * {
+	text-align: center;}
+
+footer li a{
+	color: white;}
+
+footer li a:active {
+	color: red;}
+ /*footer icon*/
+footer p a {
+	color: black;}
+
+footer p a:active {
+	color: red;}

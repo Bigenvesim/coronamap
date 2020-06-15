@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="description" content="Data Visualisation"/>
+  <meta name="keywords" content="HTML, CSS, D3"/>
+  <meta name="author" content="Jason"/>
+  <link href="styles/style.css" rel="stylesheet"/>
+  <link rel="icon" href="styles/images/coronavirus.png">
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+  <script src="https://d3js.org/topojson.v2.min.js"></script>
+  <script src="https://momentjs.com/downloads/moment.min.js"></script>
+  <script src="vis.js"></script>
+  <title>COVID-19 DASHBOARD</title>
+</head>
+
+<body>
+  <header>
+    <h1>COVID-19 DASHBOARD</h1>
+  </header>
+
+  <article>
+
+    <div id="overview">
+      <div class="ov-item" id="overview_section1">
+        <strong><p style="font-size: 2em;">Total confirmed cases</p></strong>
+        <p style="font-size: 1.5em;" id="totalConfirmedCases">0</p>
+        <br/>
+      </div>
+      <div class="ov-item" id="overview_section2">
+        <table>
+          <tr>
+            <td>
+              <ul>
+                <li  id = "activecase" style="color: #e6e600; font-size: 1.8em;">
+                  <strong style="color: black; font-size: 0.65em;">Active cases</strong>
+                </li>
+              </ul>
+            </td>
+            <td style="color: #808080; padding-top: 6px;" id="totalActiveCases">0</td>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+                <li  id = "recoveredcase" style="color: green; font-size: 1.8em; ">
+                  <strong style="color: black; font-size: 0.65em;">Recovered cases</strong>
+                </li>
+              </ul>
+            </td>
+            <td style="color: #808080; padding-top: 6px;" id="totalRecoveredCases">0</td>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+                <li id = "fatalcase" style="color: red; font-size: 1.8em;">
+                  <strong style="color: black; font-size: 0.65em;">Fatal cases</strong>
+                </li>
+              </ul>
+            </td>
+            <td style="color: #808080; padding-top: 6px;" id="totalFatalCases">0</td>
+          </tr>
+          <tr>
+            <td style="color: #808080; padding-left: 20px;" id="totalFatalCases"><em>Updated on 10th June 2020</em></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div id="map"></div>
+    <div id="wrapper">
+      <div id="metricSelection">
+        <p>METRIC</p>
+      </div>
+      <div id="countrySelection"></div>
+
+      <div id="lineChart"></div>
+      <div id="chartColorLegend"></div>
+    </div>
+
+
+  </article>
+
+
+  <footer>
+    			<div >&copy; 2020 Pham Phuc Hung Le, COS30045 - Data Visualisation, Swinburne University of Technology. </div>
+
+  </footer>
+</body>
+
+</html>
